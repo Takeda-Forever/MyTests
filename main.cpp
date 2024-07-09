@@ -30,27 +30,27 @@
 
 //Search Numbers from String
 
-//int main()
-//{
-//	string MyString{"My name is 9, and me 69  y.o :)"};
-//	vector<int> nums, pos;
-//	int startPos{};
-//	size_t foundPos;
-//	while(MyString.find_first_of("0123456789", startPos) != string::npos)
-//	{
-//		foundPos = MyString.find_first_of("0123456789", startPos);
-//		pos.push_back(foundPos);
-//		nums.push_back(MyString.at(foundPos) - '0');
-//		startPos = foundPos + 1;
-//	}
-//
-//
-//	cout << "Full Text: " << MyString << endl;
-//	for(int i = 0; i < nums.size(); i++)
-//	{
-//		cout << "Pos: " << pos.at(i) << " Num: " << nums.at(i) << endl;
-//	}
-//}
+// int main()
+// {
+// 	string MyString{"My name is 9, i've 69  y.o :)"};
+// 	vector<int> founded_numbers, position_of_sentence;
+// 	int startPos{0};
+// 	int foundPos;
+// 	while(MyString.find_first_of("0123456789", startPos) != string::npos)
+// 	{
+// 		foundPos = MyString.find_first_of("0123456789", startPos);
+// 		position_of_sentence.push_back(foundPos);
+// 		founded_numbers.push_back(MyString.at(foundPos) - '0');
+// 		startPos = foundPos + 1;
+// 	}
+
+
+// 	cout << "Full Text: " << MyString << endl;
+// 	for(int i = 0; i < founded_numbers.size(); i++)
+// 	{
+// 		cout << "Pos: " << position_of_sentence.at(i) << "\nNum: " << founded_numbers.at(i) << endl;
+// 	}
+// }
 
 //Tryed Connect MySql
 
@@ -75,7 +75,7 @@
 //        return 1;
 //    }
 //
-//    // Òåïåðü âû ìîæåòå èñïîëüçîâàòü db äëÿ âûïîëíåíèÿ SQL-çàïðîñîâ è ðàáîòû ñ áàçîé äàííûõ
+//    // Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã¢Ã» Ã¬Ã®Ã¦Ã¥Ã²Ã¥ Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¼ db Ã¤Ã«Ã¿ Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¥Ã­Ã¨Ã¿ SQL-Ã§Ã Ã¯Ã°Ã®Ã±Ã®Ã¢ Ã¨ Ã°Ã Ã¡Ã®Ã²Ã» Ã± Ã¡Ã Ã§Ã®Ã© Ã¤Ã Ã­Ã­Ã»Ãµ
 //
 //    sqlite3_close(db);
 //    return 0;
@@ -104,9 +104,9 @@
 
 
 //int main() {
-//    int bitPosition = 3; // Ïîçèöèÿ áèòà äëÿ ñîçäàíèÿ ìàñêè
-//    int mask = 0x01 << bitPosition; // Ñîçäàíèå ìàñêè ïóòåì ñäâèãà áèòà íà íóæíóþ ïîçèöèþ
-//    cout << "Mask: " << hex << mask << endl; // Âûâîä ìàñêè â øåñòíàäöàòåðè÷íîé ôîðì
+//    int bitPosition = 3; // ÃÃ®Ã§Ã¨Ã¶Ã¨Ã¿ Ã¡Ã¨Ã²Ã  Ã¤Ã«Ã¿ Ã±Ã®Ã§Ã¤Ã Ã­Ã¨Ã¿ Ã¬Ã Ã±ÃªÃ¨
+//    int mask = 0x01 << bitPosition; // Ã‘Ã®Ã§Ã¤Ã Ã­Ã¨Ã¥ Ã¬Ã Ã±ÃªÃ¨ Ã¯Ã³Ã²Ã¥Ã¬ Ã±Ã¤Ã¢Ã¨Ã£Ã  Ã¡Ã¨Ã²Ã  Ã­Ã  Ã­Ã³Ã¦Ã­Ã³Ã¾ Ã¯Ã®Ã§Ã¨Ã¶Ã¨Ã¾
+//    cout << "Mask: " << hex << mask << endl; // Ã‚Ã»Ã¢Ã®Ã¤ Ã¬Ã Ã±ÃªÃ¨ Ã¢ Ã¸Ã¥Ã±Ã²Ã­Ã Ã¤Ã¶Ã Ã²Ã¥Ã°Ã¨Ã·Ã­Ã®Ã© Ã´Ã®Ã°Ã¬
 //    return 0;
 //}
 
