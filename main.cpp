@@ -148,36 +148,8 @@
 //    return EXIT_SUCCESS;
 //}
 
-
-
- 
-namespace Test
-{
-    vector<int> sorter(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        return nums;
-    }
-    bool containsDuplicate(vector<int>& nums)
-    {
-        nums = sorter(nums);
-        bool result = (unique(nums.begin(), nums.end()) != nums.end());
-        return result;
-    }
-    void Start()
-    {
-
-        vector<vector<int>> nums{
-            {1, 2, 3, 1},
-            {1, 2, 3, 4 },
-            {1, 1, 1, 3, 3, 4, 3, 2, 4, 2},
-            {2, 5, 3, 6, -1, 5}
-        };
-        for (vector<int> a : nums)
-            cout << boolalpha << containsDuplicate(a) << endl;
-    }
-}
-
 int main() 
 {
-    Test::Start();
+    Derived obj;
+    obj.interface();
 }
