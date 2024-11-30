@@ -283,6 +283,16 @@ void SystemColor(color x)
 //    std::cout << "Message received from " << sender << ": \"" << in << "\"" << std::endl;
 //}
 
+//template <typename... Args>
+//void print(Args... args) {
+//    ((std::cout << args << " "), ...);
+//}
+//template <typename... Args>
+//auto sum(Args... args) {
+//    return (args + ...); 
+//}
+
+
 
 
 
