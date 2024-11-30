@@ -74,6 +74,29 @@ void SystemColor(color);
 //    Head head_;
 //};
 
+template<typename Type>
+class Base
+{
+public:
+    void interface()
+    {
+        static_cast<Type*>(this)->impl();
+    }
+    void impl()
+    {
+        std::cout << "Base class implementation" << std::endl;
+    }
+};
+
+class Derived : public Base<Derived>
+{
+public:
+    void impl()
+    {
+        std::cout << "Derived class implementation" << std::endl;
+    }
+};
+
 
 //void TcpServer(unsigned short port);
 //void TcpClient(unsigned short port);
