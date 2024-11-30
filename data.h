@@ -8,7 +8,7 @@ void SystemColor(color);
 //#define Password	""
 //#define SqlCatalog	"test"
 //#define SqlTable	"Users"
-#define Port		50001
+//#define Port		50001
 
 
 //class Linux;
