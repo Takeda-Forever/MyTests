@@ -291,7 +291,11 @@ void SystemColor(color x)
 //auto sum(Args... args) {
 //    return (args + ...); 
 //}
-
+//template <typename... Args>
+//typename std::enable_if<std::conjunction<std::is_arithmetic<Args>...>::value, double>::type
+//sum(Args... args) {
+//    return (args + ...);
+//}
 
 
 
