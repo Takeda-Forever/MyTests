@@ -49,6 +49,31 @@ void SystemColor(color);
 //};
 
 
+//template <typename... Types>
+//class Tuple;
+//
+//template <>
+//class Tuple<> {
+//public:
+//    void get_all_head() const {}
+//};
+//
+//template <typename Head, typename... Tail>
+//class Tuple<Head, Tail...> : public Tuple<Tail...> {
+//public:
+//    Tuple(Head head, Tail... tail) : Tuple<Tail...>(tail...), head_(head) {}
+//
+//    Head head() const { return head_; }
+//
+//    void get_all_head() const {
+//        cout << head_ << " ";
+//        Tuple<Tail...>::get_all_head();
+//    }
+//
+//private:
+//    Head head_;
+//};
+
 
 //void TcpServer(unsigned short port);
 //void TcpClient(unsigned short port);
