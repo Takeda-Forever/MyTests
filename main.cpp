@@ -148,8 +148,24 @@
 //    return EXIT_SUCCESS;
 //}
 
-int main() 
-{
-    Derived obj;
-    obj.interface();
+//int main() 
+//{
+//    Derived obj;
+//    obj.interface();
+//}
+
+int main() {
+    using ValueType = TypeCondition<ROLE, int, bool>;
+
+    static_assert(std::is_same<ValueType, int>::value || std::is_same<ValueType, bool>::value,
+        "ValueType must be either int or bool");
+
+    if constexpr (std::is_same<ValueType, int>::value) {
+        std::cout << "ValueType is int\n";
+    }
+    else {
+        std::cout << "ValueType is bool\n";
+    }
+
+    return 0;
 }
