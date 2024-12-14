@@ -98,6 +98,20 @@ public:
 };
 
 
+#include <type_traits>
+#include <iostream>
+
+#ifdef ADMIN
+constexpr bool ROLE = true;
+#else
+constexpr bool ROLE = false;
+#endif
+
+template <bool _Condition, typename _Val1, typename _Val2>
+using TypeCondition = typename std::conditional<_Condition, _Val1, _Val2>::type;
+
+
+
 //void TcpServer(unsigned short port);
 //void TcpClient(unsigned short port);
 //void runTcpServer(unsigned short port);
